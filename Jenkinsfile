@@ -17,10 +17,10 @@ pipeline {
                                                    keyFileVariable: 'mykey',
                                                    usernameVariable: 'myuser')]) {
                     
-                    script {
+                    // script {
                         // Stop and remove containers
                         // sh "ssh vagrant@192.168.105.3 -i ${mykey} \"docker ps -aq | xargs docker stop | xargs docker rm\""
-                    }
+                    // }
                     
                     sh "ssh vagrant@192.168.105.3 -i ${mykey} \"docker run -d -p 5555:5555 --name myapp ttl.sh/docker-node-frank\""
                 }
