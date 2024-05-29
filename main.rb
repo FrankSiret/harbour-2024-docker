@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'json'
 
-set :port, 4444
+set :port, 5555
 set :bind, '0.0.0.0'
 
 get '/api' do
