@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'nodejs-22'
-    }
-
     stages {
         stage('Build and Push') {
             steps {
